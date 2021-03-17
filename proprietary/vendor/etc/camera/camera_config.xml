@@ -94,7 +94,6 @@ LensInfo : Information of the lens present in the module.
     <FlashName>pmic</FlashName>
     <ChromatixName>imx363_chromatix</ChromatixName>
     <OisName>lc898123f40</OisName>
-    <ActuatorName>dw9716</ActuatorName>
     <ModesSupported>1</ModesSupported>
     <Position>BACK</Position>
     <MountAngle>90</MountAngle>
@@ -113,11 +112,11 @@ LensInfo : Information of the lens present in the module.
       <MinFocusDistance>0.1</MinFocusDistance>
     </LensInfo>
   </CameraModuleConfig>
-
+  
   <CameraModuleConfig>
     <CameraId>1</CameraId>
     <SensorName>ov8856_front</SensorName>
-    <EepromName>truly_cmb433_ov8856</EepromName>
+    <EepromName>truly_cmb433</EepromName>
     <ChromatixName>ov8856_front_chromatix</ChromatixName>
     <ModesSupported>1</ModesSupported>
     <Position>FRONT</Position>
@@ -141,11 +140,11 @@ LensInfo : Information of the lens present in the module.
   <CameraModuleConfig>
     <CameraId>2</CameraId>
     <SensorName>ov8856_back</SensorName>
-    <EepromName>truly_cmb433_ov8856</EepromName>
+    <EepromName>truly_cmb433</EepromName>
     <FlashName>pmic</FlashName>
     <ChromatixName>ov8856_back_chromatix</ChromatixName>
     <ModesSupported>1</ModesSupported>
-    <Position>BACK_AUX</Position>
+    <Position>BACK</Position>
     <MountAngle>90</MountAngle>
     <CSIInfo>
       <CSIDCore>1</CSIDCore>

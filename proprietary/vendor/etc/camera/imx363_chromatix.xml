@@ -79,8 +79,8 @@ special_mode_mask values:
 <ChromatixConfigurationRoot>
   <CommonChromatixInfo>
     <ChromatixName special_mode_mask="0">
-      <ISPCommon>imx363_common</ISPCommon>
-      <PostProc>imx363_postproc</PostProc>
+      <ISPCommon>imx363_common_default</ISPCommon>
+      <PostProc>imx363_postproc_default</PostProc>
     </ChromatixName>
     <ChromatixName special_mode_mask = "ZOOM_UPSCALE">
       <CPPSnapshot>imx363_cpp_snapshot_upscale</CPPSnapshot>
@@ -91,70 +91,298 @@ special_mode_mask values:
   </CommonChromatixInfo>
   <ResolutionChromatixInfo>
     <ChromatixName sensor_resolution_index="0" special_mode_mask="0">
-      <ISPPreview>imx363_snapshot</ISPPreview>
-      <ISPSnapshot>imx363_snapshot</ISPSnapshot>
-      <ISPVideo>imx363_snapshot</ISPVideo>
-      <CPPPreview>imx363_cpp_preview</CPPPreview>
-      <CPPSnapshot>imx363_cpp_snapshot</CPPSnapshot>
-      <CPPVideo>imx363_cpp_video</CPPVideo>
-      <CPPLiveshot>imx363_cpp_liveshot</CPPLiveshot>
-      <A3Preview>imx363_fullsize_preview_3a</A3Preview>
-      <A3Video>imx363_fullsize_video_3a</A3Video>
+      <ISPPreview>imx363_isp_default_preview</ISPPreview>
+      <ISPSnapshot>imx363_isp_default_auto_vhdroff_capture</ISPSnapshot>
+      <ISPVideo>imx363_isp_default_video</ISPVideo>
+      <CPPPreview>imx363_cpp_default_preview</CPPPreview>
+      <CPPSnapshot>imx363_cpp_default_auto_vhdroff_capture</CPPSnapshot>
+      <CPPVideo>imx363_cpp_default_video</CPPVideo>
+      <CPPLiveshot>imx363_cpp_default_capture</CPPLiveshot>
+      <A3Preview>imx363_3A_default</A3Preview>
+      <A3Video>imx363_3A_default</A3Video>
+<!--asus bsp ralf:add for 3rd part apk and when rk not running dgain apply algo -->
+        <VhdrCPPSnapshot>imx363_cpp_default_vhdr_capture</VhdrCPPSnapshot>
+       <VhdrOffCPPSnapshot>imx363_cpp_default_capture</VhdrOffCPPSnapshot>
+        <MfCPPSnapshot>imx363_cpp_default_capture_mf</MfCPPSnapshot>
+        <SrCPPSnapshot>imx363_cpp_default_sr</SrCPPSnapshot>
+       <VhdrISPSnapshot>imx363_isp_default_vhdr_capture</VhdrISPSnapshot>
+       <VhdrOffISPSnapshot>imx363_isp_default_capture</VhdrOffISPSnapshot>
+        <MfISPSnapshot>imx363_isp_default_capture_mf</MfISPSnapshot>
+        <SrISPSnapshot>imx363_isp_default_sr</SrISPSnapshot>
+<!--asus bsp ralf:add for 3rd part apk and when rk not running dgain apply algo -->
     </ChromatixName>
     <ChromatixName sensor_resolution_index="1" special_mode_mask="0">
-      <ISPPreview>imx363_video_4k</ISPPreview>
-      <ISPSnapshot>imx363_video_4k</ISPSnapshot>
-      <ISPVideo>imx363_video_4k</ISPVideo>
-      <CPPPreview>imx363_cpp_preview</CPPPreview>
-      <CPPSnapshot>imx363_cpp_snapshot</CPPSnapshot>
-      <CPPVideo>imx363_cpp_video_4k</CPPVideo>
-      <CPPLiveshot>imx363_cpp_liveshot</CPPLiveshot>
-      <A3Preview>imx363_4k_preview_3a</A3Preview>
-      <A3Video>imx363_4k_video_3a</A3Video>
+      <ISPPreview>imx363_isp_default_preview</ISPPreview>
+      <ISPSnapshot>imx363_isp_default_auto_vhdroff_capture</ISPSnapshot>
+      <ISPVideo>imx363_isp_default_video</ISPVideo>
+      <CPPPreview>imx363_cpp_default_preview</CPPPreview>
+      <CPPSnapshot>imx363_cpp_default_auto_vhdroff_capture</CPPSnapshot>
+      <CPPVideo>imx363_cpp_default_video</CPPVideo>
+      <CPPLiveshot>imx363_cpp_default_capture</CPPLiveshot>
+      <A3Preview>imx363_3A_default</A3Preview>
+      <A3Video>imx363_3A_default</A3Video>
+      <!--asus bsp ralf:add for 3rd part apk and when rk not running dgain apply algo -->
+        <VhdrCPPSnapshot>imx363_cpp_default_vhdr_capture</VhdrCPPSnapshot>
+       <VhdrOffCPPSnapshot>imx363_cpp_default_capture</VhdrOffCPPSnapshot>
+        <MfCPPSnapshot>imx363_cpp_default_capture_mf</MfCPPSnapshot>
+        <SrCPPSnapshot>imx363_cpp_default_sr</SrCPPSnapshot>
+       <VhdrISPSnapshot>imx363_isp_default_vhdr_capture</VhdrISPSnapshot>
+       <VhdrOffISPSnapshot>imx363_isp_default_capture</VhdrOffISPSnapshot>
+        <MfISPSnapshot>imx363_isp_default_capture_mf</MfISPSnapshot>
+        <SrISPSnapshot>imx363_isp_default_sr</SrISPSnapshot>
+<!--asus bsp ralf:add for 3rd part apk and when rk not running dgain apply algo -->
     </ChromatixName>
     <ChromatixName sensor_resolution_index="2" special_mode_mask="0">
-      <ISPPreview>imx363_default_video</ISPPreview>
-      <ISPSnapshot>imx363_default_video</ISPSnapshot>
-      <ISPVideo>imx363_default_video</ISPVideo>
-      <CPPPreview>imx363_cpp_preview</CPPPreview>
-      <CPPSnapshot>imx363_cpp_snapshot</CPPSnapshot>
-      <CPPVideo>imx363_cpp_video</CPPVideo>
-      <CPPLiveshot>imx363_cpp_liveshot</CPPLiveshot>
-      <A3Preview>imx363_1080p_video_3a</A3Preview>
-      <A3Video>imx363_1080p_video_3a</A3Video>
+      <ISPPreview>imx363_isp_binning_preview</ISPPreview>
+      <ISPSnapshot>imx363_isp_binning_capture</ISPSnapshot>
+      <ISPVideo>imx363_isp_binning_video</ISPVideo>
+      <CPPPreview>imx363_cpp_binning_preview</CPPPreview>
+      <CPPSnapshot>imx363_cpp_binning_capture</CPPSnapshot>
+      <CPPVideo>imx363_cpp_binning_video</CPPVideo>
+      <CPPLiveshot>imx363_cpp_binning_capture</CPPLiveshot>
+      <A3Preview>imx363_3A_default</A3Preview>
+      <A3Video>imx363_3A_default</A3Video>
+      <!--asus bsp ralf:add for 3rd part apk and when rk not running dgain apply algo -->
+        <VhdrCPPSnapshot>imx363_cpp_binning_capture</VhdrCPPSnapshot>
+       <VhdrOffCPPSnapshot>imx363_cpp_binning_capture</VhdrOffCPPSnapshot>
+        <MfCPPSnapshot>imx363_cpp_binning_capture</MfCPPSnapshot>
+        <SrCPPSnapshot>imx363_cpp_binning_capture</SrCPPSnapshot>
+       <VhdrISPSnapshot>imx363_isp_binning_capture</VhdrISPSnapshot>
+       <VhdrOffISPSnapshot>imx363_isp_binning_capture</VhdrOffISPSnapshot>
+        <MfISPSnapshot>imx363_isp_binning_capture</MfISPSnapshot>
+        <SrISPSnapshot>imx363_isp_binning_capture</SrISPSnapshot>
+<!--asus bsp ralf:add for 3rd part apk and when rk not running dgain apply algo -->
     </ChromatixName>
     <ChromatixName sensor_resolution_index="3" special_mode_mask="0">
-      <ISPPreview>imx363_hfr_60</ISPPreview>
-      <ISPSnapshot>imx363_hfr_60</ISPSnapshot>
-      <ISPVideo>imx363_hfr_60</ISPVideo>
-      <CPPPreview>imx363_cpp_hfr_60</CPPPreview>
-      <CPPSnapshot>imx363_cpp_hfr_60</CPPSnapshot>
-      <CPPVideo>imx363_cpp_hfr_60</CPPVideo>
-      <CPPLiveshot>imx363_cpp_hfr_60</CPPLiveshot>
-      <A3Preview>imx363_hfr_60_3a</A3Preview>
-      <A3Video>imx363_hfr_60_3a</A3Video>
+      <ISPPreview>imx363_isp_binning_preview</ISPPreview>
+      <ISPSnapshot>imx363_isp_binning_capture</ISPSnapshot>
+      <ISPVideo>imx363_isp_binning_video</ISPVideo>
+      <CPPPreview>imx363_cpp_binning_preview</CPPPreview>
+      <CPPSnapshot>imx363_cpp_binning_capture</CPPSnapshot>
+      <CPPVideo>imx363_cpp_binning_video</CPPVideo>
+      <CPPLiveshot>imx363_cpp_binning_capture</CPPLiveshot>
+      <A3Preview>imx363_3A_default</A3Preview>
+      <A3Video>imx363_3A_default</A3Video>
+      <!--asus bsp ralf:add for 3rd part apk and when rk not running dgain apply algo -->
+        <VhdrCPPSnapshot>imx363_cpp_binning_capture</VhdrCPPSnapshot>
+       <VhdrOffCPPSnapshot>imx363_cpp_binning_capture</VhdrOffCPPSnapshot>
+        <MfCPPSnapshot>imx363_cpp_binning_capture</MfCPPSnapshot>
+        <SrCPPSnapshot>imx363_cpp_binning_capture</SrCPPSnapshot>
+       <VhdrISPSnapshot>imx363_isp_binning_capture</VhdrISPSnapshot>
+       <VhdrOffISPSnapshot>imx363_isp_binning_capture</VhdrOffISPSnapshot>
+        <MfISPSnapshot>imx363_isp_binning_capture</MfISPSnapshot>
+        <SrISPSnapshot>imx363_isp_binning_capture</SrISPSnapshot>
+<!--asus bsp ralf:add for 3rd part apk and when rk not running dgain apply algo -->
     </ChromatixName>
-    <ChromatixName sensor_resolution_index="4" special_mode_mask="0">
-      <ISPPreview>imx363_hfr_120</ISPPreview>
-      <ISPSnapshot>imx363_hfr_120</ISPSnapshot>
-      <ISPVideo>imx363_hfr_120</ISPVideo>
-      <CPPPreview>imx363_cpp_hfr_120</CPPPreview>
-      <CPPSnapshot>imx363_cpp_hfr_120</CPPSnapshot>
-      <CPPVideo>imx363_cpp_hfr_120</CPPVideo>
-      <CPPLiveshot>imx363_cpp_hfr_120</CPPLiveshot>
-      <A3Preview>imx363_hfr_120_3a</A3Preview>
-      <A3Video>imx363_hfr_120_3a</A3Video>
+       <ChromatixName sensor_resolution_index="4" special_mode_mask="0">
+      <ISPPreview>imx363_isp_default_preview</ISPPreview>
+      <ISPSnapshot>imx363_isp_default_auto_vhdroff_capture</ISPSnapshot>
+      <ISPVideo>imx363_isp_default_video</ISPVideo>
+      <CPPPreview>imx363_cpp_default_preview</CPPPreview>
+      <CPPSnapshot>imx363_cpp_default_auto_vhdroff_capture</CPPSnapshot>
+      <CPPVideo>imx363_cpp_default_video</CPPVideo>
+      <CPPLiveshot>imx363_cpp_default_capture</CPPLiveshot>
+      <A3Preview>imx363_3A_default</A3Preview>
+      <A3Video>imx363_3A_default</A3Video>
+      <!--asus bsp ralf:add for 3rd part apk and when rk not running dgain apply algo -->
+        <VhdrCPPSnapshot>imx363_cpp_default_vhdr_capture</VhdrCPPSnapshot>
+       <VhdrOffCPPSnapshot>imx363_cpp_default_capture</VhdrOffCPPSnapshot>
+        <MfCPPSnapshot>imx363_cpp_default_capture_mf</MfCPPSnapshot>
+        <SrCPPSnapshot>imx363_cpp_default_sr</SrCPPSnapshot>
+       <VhdrISPSnapshot>imx363_isp_default_vhdr_capture</VhdrISPSnapshot>
+       <VhdrOffISPSnapshot>imx363_isp_default_capture</VhdrOffISPSnapshot>
+        <MfISPSnapshot>imx363_isp_default_capture_mf</MfISPSnapshot>
+        <SrISPSnapshot>imx363_isp_default_sr</SrISPSnapshot>
+<!--asus bsp ralf:add for 3rd part apk and when rk not running dgain apply algo -->
     </ChromatixName>
     <ChromatixName sensor_resolution_index="5" special_mode_mask="0">
-      <ISPPreview>imx363_snapshot_hdr</ISPPreview>
-      <ISPSnapshot>imx363_snapshot_hdr</ISPSnapshot>
-      <ISPVideo>imx363_snapshot_hdr</ISPVideo>
-      <CPPPreview>imx363_cpp_snapshot_hdr</CPPPreview>
-      <CPPSnapshot>imx363_cpp_snapshot_hdr</CPPSnapshot>
-      <CPPVideo>imx363_cpp_snapshot_hdr</CPPVideo>
-      <CPPLiveshot>imx363_cpp_snapshot_hdr</CPPLiveshot>
-      <A3Preview>imx363_hdr_snapshot_3a</A3Preview>
-      <A3Video>imx363_hdr_snapshot_3a</A3Video>
+      <ISPPreview>imx363_isp_default_vhdr_preview</ISPPreview>
+      <ISPSnapshot>imx363_isp_default_auto_capture</ISPSnapshot>
+      <ISPVideo>imx363_isp_default_vhdr_video</ISPVideo>
+      <CPPPreview>imx363_cpp_default_vhdr_preview</CPPPreview>
+      <CPPSnapshot>imx363_cpp_default_auto_capture</CPPSnapshot>
+      <CPPVideo>imx363_cpp_default_vhdr_video</CPPVideo>
+      <CPPLiveshot>imx363_cpp_default_vhdr_capture</CPPLiveshot>
+      <A3Preview>imx363_3A_default</A3Preview>
+      <A3Video>imx363_3A_default</A3Video>
+      <!--asus bsp ralf:add for 3rd part apk and when rk not running dgain apply algo -->
+        <VhdrCPPSnapshot>imx363_cpp_default_vhdr_capture</VhdrCPPSnapshot>
+       <VhdrOffCPPSnapshot>imx363_cpp_default_capture</VhdrOffCPPSnapshot>
+        <MfCPPSnapshot>imx363_cpp_default_capture_mf</MfCPPSnapshot>
+        <SrCPPSnapshot>imx363_cpp_default_sr</SrCPPSnapshot>
+       <VhdrISPSnapshot>imx363_isp_default_vhdr_capture</VhdrISPSnapshot>
+       <VhdrOffISPSnapshot>imx363_isp_default_capture</VhdrOffISPSnapshot>
+        <MfISPSnapshot>imx363_isp_default_capture_mf</MfISPSnapshot>
+        <SrISPSnapshot>imx363_isp_default_sr</SrISPSnapshot>
+<!--asus bsp ralf:add for 3rd part apk and when rk not running dgain apply algo -->
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="6" special_mode_mask="0">
+      <ISPPreview>imx363_isp_default_vhdr_preview</ISPPreview>
+      <ISPSnapshot>imx363_isp_default_auto_capture</ISPSnapshot>
+      <ISPVideo>imx363_isp_default_vhdr_video</ISPVideo>
+      <CPPPreview>imx363_cpp_default_vhdr_preview</CPPPreview>
+      <CPPSnapshot>imx363_cpp_default_auto_capture</CPPSnapshot>
+      <CPPVideo>imx363_cpp_default_vhdr_video</CPPVideo>
+      <CPPLiveshot>imx363_cpp_default_vhdr_capture</CPPLiveshot>
+      <A3Preview>imx363_3A_default</A3Preview>
+      <A3Video>imx363_3A_default</A3Video>
+      <!--asus bsp ralf:add for 3rd part apk and when rk not running dgain apply algo -->
+        <VhdrCPPSnapshot>imx363_cpp_default_vhdr_capture</VhdrCPPSnapshot>
+       <VhdrOffCPPSnapshot>imx363_cpp_default_capture</VhdrOffCPPSnapshot>
+        <MfCPPSnapshot>imx363_cpp_default_capture_mf</MfCPPSnapshot>
+        <SrCPPSnapshot>imx363_cpp_default_sr</SrCPPSnapshot>
+       <VhdrISPSnapshot>imx363_isp_default_vhdr_capture</VhdrISPSnapshot>
+       <VhdrOffISPSnapshot>imx363_isp_default_capture</VhdrOffISPSnapshot>
+        <MfISPSnapshot>imx363_isp_default_capture_mf</MfISPSnapshot>
+        <SrISPSnapshot>imx363_isp_default_sr</SrISPSnapshot>
+<!--asus bsp ralf:add for 3rd part apk and when rk not running dgain apply algo -->
+    </ChromatixName>
+      <ChromatixName sensor_resolution_index="7" special_mode_mask="0">
+      <ISPPreview>imx363_isp_binning_vhdr_preview</ISPPreview>
+      <ISPSnapshot>imx363_isp_binning_auto_capture</ISPSnapshot>
+      <ISPVideo>imx363_isp_binning_vhdr_video</ISPVideo>
+      <CPPPreview>imx363_cpp_binning_vhdr_preview</CPPPreview>
+      <CPPSnapshot>imx363_cpp_binning_auto_capture</CPPSnapshot>
+      <CPPVideo>imx363_cpp_binning_vhdr_video</CPPVideo>
+      <CPPLiveshot>imx363_cpp_binning_vhdr_capture</CPPLiveshot>
+      <A3Preview>imx363_3A_default</A3Preview>
+      <A3Video>imx363_3A_default</A3Video>
+      <!--asus bsp ralf:add for 3rd part apk and when rk not running dgain apply algo -->
+        <VhdrCPPSnapshot>imx363_cpp_binning_vhdr_capture</VhdrCPPSnapshot>
+       <VhdrOffCPPSnapshot>imx363_cpp_binning_capture</VhdrOffCPPSnapshot>
+        <MfCPPSnapshot>imx363_cpp_binning_vhdr_capture</MfCPPSnapshot>
+        <SrCPPSnapshot>imx363_cpp_binning_vhdr_capture</SrCPPSnapshot>
+       <VhdrISPSnapshot>imx363_isp_binning_vhdr_capture</VhdrISPSnapshot>
+       <VhdrOffISPSnapshot>imx363_isp_binning_capture</VhdrOffISPSnapshot>
+        <MfISPSnapshot>imx363_isp_binning_vhdr_capture</MfISPSnapshot>
+        <SrISPSnapshot>imx363_isp_binning_vhdr_capture</SrISPSnapshot>
+<!--asus bsp ralf:add for 3rd part apk and when rk not running dgain apply algo -->
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="8" special_mode_mask="0">
+      <ISPPreview>imx363_isp_binning_vhdr_preview</ISPPreview>
+      <ISPSnapshot>imx363_isp_binning_auto_capture</ISPSnapshot>
+      <ISPVideo>imx363_isp_binning_vhdr_video</ISPVideo>
+      <CPPPreview>imx363_cpp_binning_vhdr_preview</CPPPreview>
+      <CPPSnapshot>imx363_cpp_binning_auto_capture</CPPSnapshot>
+      <CPPVideo>imx363_cpp_binning_vhdr_video</CPPVideo>
+      <CPPLiveshot>imx363_cpp_binning_vhdr_capture</CPPLiveshot>
+      <A3Preview>imx363_3A_default</A3Preview>
+      <A3Video>imx363_3A_default</A3Video>
+      <!--asus bsp ralf:add for 3rd part apk and when rk not running dgain apply algo -->
+        <VhdrCPPSnapshot>imx363_cpp_binning_vhdr_capture</VhdrCPPSnapshot>
+       <VhdrOffCPPSnapshot>imx363_cpp_binning_capture</VhdrOffCPPSnapshot>
+        <MfCPPSnapshot>imx363_cpp_binning_vhdr_capture</MfCPPSnapshot>
+        <SrCPPSnapshot>imx363_cpp_binning_vhdr_capture</SrCPPSnapshot>
+       <VhdrISPSnapshot>imx363_isp_binning_vhdr_capture</VhdrISPSnapshot>
+       <VhdrOffISPSnapshot>imx363_isp_binning_capture</VhdrOffISPSnapshot>
+        <MfISPSnapshot>imx363_isp_binning_vhdr_capture</MfISPSnapshot>
+        <SrISPSnapshot>imx363_isp_binning_vhdr_capture</SrISPSnapshot>
+<!--asus bsp ralf:add for 3rd part apk and when rk not running dgain apply algo -->
+    </ChromatixName>
+        <ChromatixName sensor_resolution_index="9"  special_mode_mask="0">
+      <ISPPreview>imx363_isp_binning_preview</ISPPreview>
+      <ISPSnapshot>imx363_isp_binning_capture</ISPSnapshot>
+      <ISPVideo>imx363_isp_binning_video</ISPVideo>
+      <CPPPreview>imx363_cpp_binning_preview</CPPPreview>
+      <CPPSnapshot>imx363_cpp_binning_capture</CPPSnapshot>
+      <CPPVideo>imx363_cpp_binning_video</CPPVideo>
+      <CPPLiveshot>imx363_cpp_binning_capture</CPPLiveshot>
+      <A3Preview>imx363_3A_default</A3Preview>
+      <A3Video>imx363_3A_default</A3Video>
+      <!--asus bsp ralf:add for 3rd part apk and when rk not running dgain apply algo -->
+        <VhdrCPPSnapshot>imx363_cpp_binning_capture</VhdrCPPSnapshot>
+       <VhdrOffCPPSnapshot>imx363_cpp_binning_capture</VhdrOffCPPSnapshot>
+        <MfCPPSnapshot>imx363_cpp_binning_capture</MfCPPSnapshot>
+        <SrCPPSnapshot>imx363_cpp_binning_capture</SrCPPSnapshot>
+       <VhdrISPSnapshot>imx363_isp_binning_capture</VhdrISPSnapshot>
+       <VhdrOffISPSnapshot>imx363_isp_binning_capture</VhdrOffISPSnapshot>
+        <MfISPSnapshot>imx363_isp_binning_capture</MfISPSnapshot>
+        <SrISPSnapshot>imx363_isp_binning_capture</SrISPSnapshot>
+<!--asus bsp ralf:add for 3rd part apk and when rk not running dgain apply algo -->
+    </ChromatixName>
+      <ChromatixName sensor_resolution_index="10"  special_mode_mask="0">
+      <ISPPreview>imx363_isp_binning_preview</ISPPreview>
+      <ISPSnapshot>imx363_isp_binning_capture</ISPSnapshot>
+      <ISPVideo>imx363_isp_binning_video</ISPVideo>
+      <CPPPreview>imx363_cpp_binning_preview</CPPPreview>
+      <CPPSnapshot>imx363_cpp_binning_capture</CPPSnapshot>
+      <CPPVideo>imx363_cpp_binning_video</CPPVideo>
+      <CPPLiveshot>imx363_cpp_binning_capture</CPPLiveshot>
+      <A3Preview>imx363_3A_default</A3Preview>
+      <A3Video>imx363_3A_default</A3Video>
+      <!--asus bsp ralf:add for 3rd part apk and when rk not running dgain apply algo -->
+        <VhdrCPPSnapshot>imx363_cpp_binning_capture</VhdrCPPSnapshot>
+       <VhdrOffCPPSnapshot>imx363_cpp_binning_capture</VhdrOffCPPSnapshot>
+        <MfCPPSnapshot>imx363_cpp_binning_capture</MfCPPSnapshot>
+        <SrCPPSnapshot>imx363_cpp_binning_capture</SrCPPSnapshot>
+       <VhdrISPSnapshot>imx363_isp_binning_capture</VhdrISPSnapshot>
+       <VhdrOffISPSnapshot>imx363_isp_binning_capture</VhdrOffISPSnapshot>
+        <MfISPSnapshot>imx363_isp_binning_capture</MfISPSnapshot>
+        <SrISPSnapshot>imx363_isp_binning_capture</SrISPSnapshot>
+<!--asus bsp ralf:add for 3rd part apk and when rk not running dgain apply algo -->
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="11" special_mode_mask="0">
+      <ISPPreview>imx363_isp_binning_preview</ISPPreview>
+      <ISPSnapshot>imx363_isp_binning_capture</ISPSnapshot>
+      <ISPVideo>imx363_isp_binning_video</ISPVideo>
+      <CPPPreview>imx363_cpp_binning_preview</CPPPreview>
+      <CPPSnapshot>imx363_cpp_binning_capture</CPPSnapshot>
+      <CPPVideo>imx363_cpp_binning_video</CPPVideo>
+      <CPPLiveshot>imx363_cpp_binning_capture</CPPLiveshot>
+      <A3Preview>imx363_3A_default</A3Preview>
+      <A3Video>imx363_3A_default</A3Video>
+      <!--asus bsp ralf:add for 3rd part apk and when rk not running dgain apply algo -->
+        <VhdrCPPSnapshot>imx363_cpp_binning_capture</VhdrCPPSnapshot>
+       <VhdrOffCPPSnapshot>imx363_cpp_binning_capture</VhdrOffCPPSnapshot>
+        <MfCPPSnapshot>imx363_cpp_binning_capture</MfCPPSnapshot>
+        <SrCPPSnapshot>imx363_cpp_binning_capture</SrCPPSnapshot>
+       <VhdrISPSnapshot>imx363_isp_binning_capture</VhdrISPSnapshot>
+       <VhdrOffISPSnapshot>imx363_isp_binning_capture</VhdrOffISPSnapshot>
+        <MfISPSnapshot>imx363_isp_binning_capture</MfISPSnapshot>
+        <SrISPSnapshot>imx363_isp_binning_capture</SrISPSnapshot>
+<!--asus bsp ralf:add for 3rd part apk and when rk not running dgain apply algo -->
+    </ChromatixName>
+        <ChromatixName sensor_resolution_index="12" special_mode_mask="0">
+      <ISPPreview>imx363_isp_default_preview</ISPPreview>
+      <ISPSnapshot>imx363_isp_default_auto_vhdroff_capture</ISPSnapshot>
+      <ISPVideo>imx363_isp_default_video</ISPVideo>
+      <CPPPreview>imx363_cpp_default_preview</CPPPreview>
+      <CPPSnapshot>imx363_cpp_default_auto_vhdroff_capture</CPPSnapshot>
+      <CPPVideo>imx363_cpp_default_video</CPPVideo>
+      <CPPLiveshot>imx363_cpp_default_capture</CPPLiveshot>
+      <A3Preview>imx363_3A_default</A3Preview>
+      <A3Video>imx363_3A_default</A3Video>
+<!--asus bsp ralf:add for 3rd part apk and when rk not running dgain apply algo -->
+        <VhdrCPPSnapshot>imx363_cpp_default_vhdr_capture</VhdrCPPSnapshot>
+       <VhdrOffCPPSnapshot>imx363_cpp_default_capture</VhdrOffCPPSnapshot>
+        <MfCPPSnapshot>imx363_cpp_default_capture_mf</MfCPPSnapshot>
+        <SrCPPSnapshot>imx363_cpp_default_sr</SrCPPSnapshot>
+       <VhdrISPSnapshot>imx363_isp_default_vhdr_capture</VhdrISPSnapshot>
+       <VhdrOffISPSnapshot>imx363_isp_default_capture</VhdrOffISPSnapshot>
+        <MfISPSnapshot>imx363_isp_default_capture_mf</MfISPSnapshot>
+        <SrISPSnapshot>imx363_isp_default_sr</SrISPSnapshot>
+<!--asus bsp ralf:add for 3rd part apk and when rk not running dgain apply algo -->
+    </ChromatixName>
+        <ChromatixName sensor_resolution_index="13" special_mode_mask="0">
+      <ISPPreview>imx363_isp_default_preview</ISPPreview>
+      <ISPSnapshot>imx363_isp_default_auto_vhdroff_capture</ISPSnapshot>
+      <ISPVideo>imx363_isp_default_video</ISPVideo>
+      <CPPPreview>imx363_cpp_default_preview</CPPPreview>
+      <CPPSnapshot>imx363_cpp_default_auto_vhdroff_capture</CPPSnapshot>
+      <CPPVideo>imx363_cpp_default_video</CPPVideo>
+      <CPPLiveshot>imx363_cpp_default_capture</CPPLiveshot>
+      <A3Preview>imx363_3A_default</A3Preview>
+      <A3Video>imx363_3A_default</A3Video>
+<!--asus bsp ralf:add for 3rd part apk and when rk not running dgain apply algo -->
+        <VhdrCPPSnapshot>imx363_cpp_default_vhdr_capture</VhdrCPPSnapshot>
+       <VhdrOffCPPSnapshot>imx363_cpp_default_capture</VhdrOffCPPSnapshot>
+        <MfCPPSnapshot>imx363_cpp_default_capture_mf</MfCPPSnapshot>
+        <SrCPPSnapshot>imx363_cpp_default_sr</SrCPPSnapshot>
+       <VhdrISPSnapshot>imx363_isp_default_vhdr_capture</VhdrISPSnapshot>
+       <VhdrOffISPSnapshot>imx363_isp_default_capture</VhdrOffISPSnapshot>
+        <MfISPSnapshot>imx363_isp_default_capture_mf</MfISPSnapshot>
+        <SrISPSnapshot>imx363_isp_default_sr</SrISPSnapshot>
+<!--asus bsp ralf:add for 3rd part apk and when rk not running dgain apply algo -->
     </ChromatixName>
   </ResolutionChromatixInfo>
 </ChromatixConfigurationRoot>

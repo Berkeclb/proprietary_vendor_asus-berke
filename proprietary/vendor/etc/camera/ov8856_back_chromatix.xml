@@ -79,60 +79,121 @@ special_mode_mask values:
 <ChromatixConfigurationRoot>
   <CommonChromatixInfo>
     <ChromatixName>
-      <ISPCommon>ov8856_back_common</ISPCommon>
-      <PostProc>ov8856_back_postproc</PostProc>
-      <CPPPreview>ov8856_back_cpp_preview</CPPPreview>
-      <CPPSnapshot>ov8856_back_cpp_snapshot</CPPSnapshot>
-      <CPPLiveshot>ov8856_back_cpp_liveshot</CPPLiveshot>
+      <ISPCommon>ov8856_8501_common_default</ISPCommon>
+      <PostProc>ov8856_8501_postproc_default</PostProc>
     </ChromatixName>
     <ChromatixName special_mode_mask="ZOOM_UPSCALE">
-      <CPPSnapshot>ov8856_back_cpp_us_chromatix</CPPSnapshot>
+      <CPPSnapshot>ov8856_cpp_us_chromatix</CPPSnapshot>
     </ChromatixName>
     <ChromatixName special_mode_mask="ZOOM_DOWNSCALE">
-      <CPPSnapshot>ov8856_back_cpp_ds_chromatix</CPPSnapshot>
+      <CPPSnapshot>ov8856_cpp_ds_chromatix</CPPSnapshot>
     </ChromatixName>
   </CommonChromatixInfo>
   <ResolutionChromatixInfo>
     <ChromatixName sensor_resolution_index="0">
-      <ISPPreview>ov8856_back_snapshot</ISPPreview>
-      <ISPSnapshot>ov8856_back_snapshot</ISPSnapshot>
-      <ISPVideo>ov8856_back_default_video</ISPVideo>
-      <CPPVideo>ov8856_back_cpp_video</CPPVideo>
-      <A3Preview>ov8856_back_zsl_preview</A3Preview>
-      <A3Video>ov8856_back_zsl_video</A3Video>
+      <ISPPreview>ov8856_8501_isp_default_preview</ISPPreview>
+      <ISPSnapshot>ov8856_8501_isp_default_auto_vhdroff_capture</ISPSnapshot>
+      <ISPVideo>ov8856_8501_isp_default_video</ISPVideo>
+      <CPPPreview>ov8856_8501_cpp_default_preview</CPPPreview>
+      <CPPSnapshot>ov8856_8501_cpp_default_auto_vhdroff_capture</CPPSnapshot>
+      <CPPVideo>ov8856_8501_cpp_default_video</CPPVideo>
+      <CPPLiveshot>ov8856_8501_cpp_default_capture</CPPLiveshot>
+      <A3Preview>ov8856_8501_3A_default</A3Preview>
+      <A3Video>ov8856_8501_3A_default</A3Video>
+      <!--asus bsp ralf:add for 3rd part apk and when rk not running dgain apply algo -->
+        <VhdrCPPSnapshot>ov8856_8501_cpp_default_vhdr_capture</VhdrCPPSnapshot>
+       <VhdrOffCPPSnapshot>ov8856_8501_cpp_default_capture</VhdrOffCPPSnapshot>
+        <MfCPPSnapshot>ov8856_8501_cpp_default_capture_mf</MfCPPSnapshot>
+        <SrCPPSnapshot>ov8856_8501_cpp_default_sr</SrCPPSnapshot>
+       <VhdrISPSnapshot>ov8856_8501_isp_default_vhdr_capture</VhdrISPSnapshot>
+       <VhdrOffISPSnapshot>ov8856_8501_isp_default_capture</VhdrOffISPSnapshot>
+        <MfISPSnapshot>ov8856_8501_isp_default_capture_mf</MfISPSnapshot>
+        <SrISPSnapshot>ov8856_8501_isp_default_sr</SrISPSnapshot>
+<!--asus bsp ralf:add for 3rd part apk and when rk not running dgain apply algo -->
     </ChromatixName>
     <ChromatixName sensor_resolution_index="1">
-      <ISPPreview>ov8856_back_snapshot</ISPPreview>
-      <ISPSnapshot>ov8856_back_snapshot</ISPSnapshot>
-      <ISPVideo>ov8856_back_default_video</ISPVideo>
-      <CPPVideo>ov8856_back_cpp_video</CPPVideo>
-      <A3Preview>ov8856_back_zsl_preview</A3Preview>
-      <A3Video>ov8856_back_zsl_video</A3Video>
+      <ISPPreview>ov8856_8501_isp_default_preview</ISPPreview>
+      <ISPSnapshot>ov8856_8501_isp_default_auto_vhdroff_capture</ISPSnapshot>
+      <ISPVideo>ov8856_8501_isp_default_video</ISPVideo>
+      <CPPPreview>ov8856_8501_cpp_default_preview</CPPPreview>
+      <CPPSnapshot>ov8856_8501_cpp_default_auto_vhdroff_capture</CPPSnapshot>
+      <CPPVideo>ov8856_8501_cpp_default_video</CPPVideo>
+      <CPPLiveshot>ov8856_8501_cpp_default_capture</CPPLiveshot>
+      <A3Preview>ov8856_8501_3A_default</A3Preview>
+      <A3Video>ov8856_8501_3A_default</A3Video>
+            <!--asus bsp ralf:add for 3rd part apk and when rk not running dgain apply algo -->
+        <VhdrCPPSnapshot>ov8856_8501_cpp_default_vhdr_capture</VhdrCPPSnapshot>
+       <VhdrOffCPPSnapshot>ov8856_8501_cpp_default_capture</VhdrOffCPPSnapshot>
+        <MfCPPSnapshot>ov8856_8501_cpp_default_capture_mf</MfCPPSnapshot>
+        <SrCPPSnapshot>ov8856_8501_cpp_default_sr</SrCPPSnapshot>
+       <VhdrISPSnapshot>ov8856_8501_isp_default_vhdr_capture</VhdrISPSnapshot>
+       <VhdrOffISPSnapshot>ov8856_8501_isp_default_capture</VhdrOffISPSnapshot>
+        <MfISPSnapshot>ov8856_8501_isp_default_capture_mf</MfISPSnapshot>
+        <SrISPSnapshot>ov8856_8501_isp_default_sr</SrISPSnapshot>
+<!--asus bsp ralf:add for 3rd part apk and when rk not running dgain apply algo -->
     </ChromatixName>
     <ChromatixName sensor_resolution_index="2">
-      <ISPPreview>ov8856_back_snapshot</ISPPreview>
-      <ISPSnapshot>ov8856_back_snapshot</ISPSnapshot>
-      <ISPVideo>ov8856_back_default_video</ISPVideo>
-      <CPPVideo>ov8856_back_cpp_video</CPPVideo>
-      <A3Preview>ov8856_back_zsl_preview</A3Preview>
-      <A3Video>ov8856_back_zsl_video</A3Video>
+      <ISPPreview>ov8856_8501_isp_binning_preview</ISPPreview>
+      <ISPSnapshot>ov8856_8501_isp_binning_capture</ISPSnapshot>
+      <ISPVideo>ov8856_8501_isp_binning_video</ISPVideo>
+      <CPPPreview>ov8856_8501_cpp_binning_preview</CPPPreview>
+      <CPPSnapshot>ov8856_8501_cpp_binning_capture</CPPSnapshot>
+      <CPPVideo>ov8856_8501_cpp_binning_video</CPPVideo>
+      <CPPLiveshot>ov8856_8501_cpp_binning_capture</CPPLiveshot>
+      <A3Preview>ov8856_8501_3A_default</A3Preview>
+      <A3Video>ov8856_8501_3A_default</A3Video>
+            <!--asus bsp ralf:add for 3rd part apk and when rk not running dgain apply algo -->
+        <VhdrCPPSnapshot>ov8856_8501_cpp_default_vhdr_capture</VhdrCPPSnapshot>
+       <VhdrOffCPPSnapshot>ov8856_8501_cpp_binning_capture</VhdrOffCPPSnapshot>
+        <MfCPPSnapshot>ov8856_8501_cpp_binning_capture</MfCPPSnapshot>
+        <SrCPPSnapshot>ov8856_8501_cpp_binning_capture</SrCPPSnapshot>
+       <VhdrISPSnapshot>ov8856_8501_isp_binning_capture</VhdrISPSnapshot>
+       <VhdrOffISPSnapshot>ov8856_8501_isp_binning_capture</VhdrOffISPSnapshot>
+        <MfISPSnapshot>ov8856_8501_isp_binning_capture</MfISPSnapshot>
+        <SrISPSnapshot>ov8856_8501_isp_binning_capture</SrISPSnapshot>
+<!--asus bsp ralf:add for 3rd part apk and when rk not running dgain apply algo -->
     </ChromatixName>
     <ChromatixName sensor_resolution_index="3">
-      <ISPPreview>ov8856_back_snapshot</ISPPreview>
-      <ISPSnapshot>ov8856_back_snapshot</ISPSnapshot>
-      <ISPVideo>ov8856_back_default_video</ISPVideo>
-      <CPPVideo>ov8856_back_cpp_video</CPPVideo>
-      <A3Preview>ov8856_back_zsl_preview</A3Preview>
-      <A3Video>ov8856_back_zsl_video</A3Video>
+      <ISPPreview>ov8856_8501_isp_binning_preview</ISPPreview>
+      <ISPSnapshot>ov8856_8501_isp_binning_capture</ISPSnapshot>
+      <ISPVideo>ov8856_8501_isp_binning_video</ISPVideo>
+      <CPPPreview>ov8856_8501_cpp_binning_preview</CPPPreview>
+      <CPPSnapshot>ov8856_8501_cpp_binning_capture</CPPSnapshot>
+      <CPPVideo>ov8856_8501_cpp_binning_video</CPPVideo>
+      <CPPLiveshot>ov8856_8501_cpp_binning_capture</CPPLiveshot>
+      <A3Preview>ov8856_8501_3A_default</A3Preview>
+      <A3Video>ov8856_8501_3A_default</A3Video>
+            <!--asus bsp ralf:add for 3rd part apk and when rk not running dgain apply algo -->
+        <VhdrCPPSnapshot>ov8856_8501_cpp_default_vhdr_capture</VhdrCPPSnapshot>
+       <VhdrOffCPPSnapshot>ov8856_8501_cpp_binning_capture</VhdrOffCPPSnapshot>
+        <MfCPPSnapshot>ov8856_8501_cpp_binning_capture</MfCPPSnapshot>
+        <SrCPPSnapshot>ov8856_8501_cpp_binning_capture</SrCPPSnapshot>
+       <VhdrISPSnapshot>ov8856_8501_isp_binning_capture</VhdrISPSnapshot>
+       <VhdrOffISPSnapshot>ov8856_8501_isp_binning_capture</VhdrOffISPSnapshot>
+        <MfISPSnapshot>ov8856_8501_isp_binning_capture</MfISPSnapshot>
+        <SrISPSnapshot>ov8856_8501_isp_binning_capture</SrISPSnapshot>
+<!--asus bsp ralf:add for 3rd part apk and when rk not running dgain apply algo -->
     </ChromatixName>
     <ChromatixName sensor_resolution_index="4">
-      <ISPPreview>ov8856_back_hfr_90</ISPPreview>
-      <ISPSnapshot>ov8856_back_hfr_90</ISPSnapshot>
-      <ISPVideo>ov8856_back_hfr_90</ISPVideo>
-      <CPPVideo>ov8856_back_cpp_hfr_90</CPPVideo>
-      <A3Preview>ov8856_back_a3_hfr_90</A3Preview>
-      <A3Video>ov8856_back_a3_hfr_90</A3Video>
+      <ISPPreview>ov8856_8501_isp_default_preview</ISPPreview>
+      <ISPSnapshot>ov8856_8501_isp_default_auto_vhdroff_capture</ISPSnapshot>
+      <ISPVideo>ov8856_8501_isp_default_video</ISPVideo>
+      <CPPPreview>ov8856_8501_cpp_default_preview</CPPPreview>
+      <CPPSnapshot>ov8856_8501_cpp_default_auto_vhdroff_capture</CPPSnapshot>
+      <CPPVideo>ov8856_8501_cpp_default_video</CPPVideo>
+      <CPPLiveshot>ov8856_8501_cpp_default_capture</CPPLiveshot>
+      <A3Preview>ov8856_8501_3A_default</A3Preview>
+      <A3Video>ov8856_8501_3A_default</A3Video>
+            <!--asus bsp ralf:add for 3rd part apk and when rk not running dgain apply algo -->
+        <VhdrCPPSnapshot>ov8856_8501_cpp_default_vhdr_capture</VhdrCPPSnapshot>
+       <VhdrOffCPPSnapshot>ov8856_8501_cpp_default_capture</VhdrOffCPPSnapshot>
+        <MfCPPSnapshot>ov8856_8501_cpp_default_capture_mf</MfCPPSnapshot>
+        <SrCPPSnapshot>ov8856_8501_cpp_default_sr</SrCPPSnapshot>
+       <VhdrISPSnapshot>ov8856_8501_isp_default_vhdr_capture</VhdrISPSnapshot>
+       <VhdrOffISPSnapshot>ov8856_8501_isp_default_capture</VhdrOffISPSnapshot>
+        <MfISPSnapshot>ov8856_8501_isp_default_capture_mf</MfISPSnapshot>
+        <SrISPSnapshot>ov8856_8501_isp_default_sr</SrISPSnapshot>
+<!--asus bsp ralf:add for 3rd part apk and when rk not running dgain apply algo -->
     </ChromatixName>
   </ResolutionChromatixInfo>
 </ChromatixConfigurationRoot>
-
