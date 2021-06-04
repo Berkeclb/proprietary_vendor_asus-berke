@@ -517,6 +517,10 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00QD/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile6.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile6.xml \
     vendor/asus/X00QD/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
     vendor/asus/X00QD/proprietary/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
+<<<<<<< HEAD
+=======
+    vendor/asus/X00QD/proprietary/vendor/etc/diracmobile.config:$(TARGET_COPY_OUT_VENDOR)/etc/diracmobile.config \
+>>>>>>> parent of 049e74f (X00QD: Add MotoDolby blobs)
     vendor/asus/X00QD/proprietary/vendor/etc/fallback_fonts.xml:$(TARGET_COPY_OUT_VENDOR)/etc/fallback_fonts.xml \
     vendor/asus/X00QD/proprietary/vendor/etc/hbtp/hbtpcfg.dat:$(TARGET_COPY_OUT_VENDOR)/etc/hbtp/hbtpcfg.dat \
     vendor/asus/X00QD/proprietary/vendor/etc/hbtp/hbtpcfg2.dat:$(TARGET_COPY_OUT_VENDOR)/etc/hbtp/hbtpcfg2.dat \
@@ -3115,6 +3119,10 @@ PRODUCT_PACKAGES += \
     libsdm-disp-vndapis \
     libthermalclient \
     vendor.qti.hardware.fm@1.0 \
+<<<<<<< HEAD
+=======
+    aptxui \
+>>>>>>> parent of 049e74f (X00QD: Add MotoDolby blobs)
     WfdService \
     CACertService \
     CneApp \
